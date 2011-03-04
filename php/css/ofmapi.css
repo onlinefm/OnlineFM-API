@@ -1,0 +1,255 @@
+@CHARSET "UTF-8";
+
+h1 {font-size: 18pt; margin-left: 50px; }
+ul#channels { font:10pt Trebuchet MS,Arial,Verdana,Helvetica,sans-serif; }
+/* channel-item begin */
+.channels-items-index { width: 980px; float: right; }
+.channel-item {
+    width:287px;
+    height:194px;
+    float:left;
+    overflow:hidden;
+    margin-left:10px;
+    margin-bottom:7px;
+    position:relative;
+}
+li.channel-item { list-style-type:none; }
+.first-channel-item { margin-left:0; }
+    .channel-item .cover,
+    .channel-item .cover a { float:left; width:99px; height:164px; overflow:hidden; }
+    .channel-item .meta { float:right; width:188px; height:164px; background-color:#000000; color:#818181; }
+    .channel-item .cover img { border:0; }
+        .channel-item .meta .data { width:170px; margin-left:10px; overflow:hidden; }
+        .channel-item .meta a { color:#ffffff; }
+        .channel-item h2 { display:block; float:left; margin-top:18px; font-size:14pt; }
+            .channel-item h2 a { text-decoration:none; }
+            .channel-item h2 a:hover { text-decoration:underline; color:#449def; }
+        .channel-item .playing-now { clear:both; /*padding-top:20px;*/ font-size:8pt; }
+            .channel-item .playing-now a { font-size:9pt; }
+        .channel-item .playing-next { margin-top:7px; font-size:8pt; }
+            .channel-item .playing-next a { font-size:9pt; }
+            .channel-item .playing-now span,
+            .channel-item .playing-next span { color:#cccccc; font-size:8pt; }
+    .channel-item .top {
+        width:287px;
+        height:8px;
+        top:0;
+        left:0;
+        position:absolute;
+        clear:both;
+        background:url("http://st1.ofmimg.com/images/channel_top.png") no-repeat scroll 0 0 transparent;
+    }
+    .channel-item .bottom {
+        width:287px;
+        height:41px;
+        margin-top:153px;
+        position:absolute;
+        clear:both;
+        top:0;
+        left:0;
+        background:url("http://st1.ofmimg.com/images/channel_bottom.png") no-repeat scroll 0 0 transparent;
+    }
+        .channel-item .bottom a {
+            display:block;
+            width:130px;
+            height:41px;
+            margin-top:1px;
+            margin-left:130px;
+            color:#ffffff;
+            font-size:13pt;
+            font-weight:bold;
+            clear:both;
+            text-decoration:none;
+        }
+            .channel-item .bottom a:hover { text-decoration:none; color:#ffffff !important; }
+            .channel-item .bottom a span.text { display:block; float:left; padding-top:12px; }
+            .channel-item .bottom a span.button { display:block; float:right; width:42px; height:42px; background:url("http://st1.ofmimg.com/images/play_btns.png") no-repeat scroll 0 0 transparent; }
+                .channel-item .bottom a:hover span.button { width:42px; height:42px; background:url("http://st1.ofmimg.com/images/play_btns.png") no-repeat scroll -42px 0 transparent; }
+li.more-channel-item,
+li.more-channel-item a { width:288px; height:189px; }
+    li.more-channel-item span { font-size:28pt; margin-top:40px; font-weight:bold; }
+    li.more-channel-item span.count { font-size:50pt; padding-top:40px; }
+    li.more-channel-item span.all-channels { font-size:35pt; padding-top:35px; }
+/* channel-item end */
+
+/* playing now begin */
+#playing-now { margin:40px auto 30px; overflow:hidden; font:10pt Trebuchet MS,Arial,Verdana,Helvetica,sans-serif; }
+#playing-now * { margin:0; padding:0; }
+    /*#playing-now ul.songs { width:1576px; margin-left:-200px; overflow:hidden; }*/
+    #playing-now ul.songs {
+        overflow:hidden;
+        width:1252px;
+        margin:0 auto;
+        background:url("http://st1.ofmimg.com/images/channel_red_line_bg2.png") repeat-x scroll bottom left transparent;
+    }
+        #playing-now li.song {
+            margin-left:9px;
+            margin-top:15px;
+            margin-bottom:16px;
+            float:left;
+            display:block;
+            list-style-type:none;
+            position:relative;
+            width:385px;
+        }
+        #playing-now li.song div.song-data { clear:both;/* overflow:hidden;*/ }
+            #playing-now li.song div.cover { float:left; width:190px; }
+                #playing-now li.song div.cover img { display:block; border:0; }
+            #playing-now li.song div.meta { float:left; padding-left:10px; width:185px; height:190px; position:relative; z-index:100; }
+                #playing-now li.song div.meta div.legend { position:absolute; top:0; left:0; margin-top:-34px; margin-left:10px;}
+        #playing-now li.prev { width:230px; margin-left:0; }
+            #playing-now li.prev * { color:#7F7F7F; }
+            #playing-now li.prev div.meta { width:210px; padding-left:22px; }
+                #playing-now li.prev div.meta div.legend { position:absolute; top:0; left:0; margin-top:-34px; margin-left:22px;}
+            #playing-now li.now div.button {
+                width:327px;
+                height:54px;
+                background:url("http://st1.ofmimg.com/images/ch_playing_now_line.png") no-repeat scroll 0 7px transparent;
+                position:absolute;
+                top:0;
+                left:0;
+                margin-top:154px;
+                z-index:200;
+            }
+                #playing-now li.now div.button a.player {
+                    display:block;
+                    width:135px;
+                    height:42px;
+                    margin-right:82px;
+                    float:right;
+                    color:#ffffff;
+                    text-decoration:none;
+                    font-size:14pt;
+                }
+                    #playing-now li.now div.button a.player span.text {
+                        display:block;
+                        float:right;
+                        margin-top:10px;
+                        margin-right:14px;
+                    }
+                    #playing-now li.now div.button a.player span.btn {
+                        display:block;
+                        width:42px;
+                        height:42px;
+                        float:right;
+                        background:url("http://st1.ofmimg.com/images/play_btns.png") no-repeat scroll 0 0 transparent;
+                    }
+                        #playing-now li.now div.button a.player:hover { color:#ffffff !important; }
+                        #playing-now li.now div.button a.player:hover span.btn { background-position:-42px 0; }
+                #playing-now li.now div.button a.m3u {
+                    display:block;
+                    width:110px;
+                    margin-top:0px;
+                    margin-right:18px;
+                    float:right;
+                    clear:both;
+                    color:#248ff4;
+                    /*text-decoration:none;*/
+                    font-size:9pt;
+                }
+        #playing-now li.next2 { width:225px; }
+        @media all and (min-width:0px) {head~body .next2 { overflow:hidden;  } } /*opera hack*/
+            #playing-now li.next div.line { /*position:relative;*//* width:1px; height:1px;border:1px solid red; */}
+                #playing-now li.next div.line div.before {
+                    width:89px;
+                    height:27px;
+                    top:0;
+                    left:0;
+                    margin-left:-89px;
+                    margin-top:161px;
+                    position:absolute;
+                    background:url("http://st1.ofmimg.com/images/ch_playing_next_line.png") no-repeat scroll 0 0 transparent;
+                }
+                #playing-now li.next div.line div.after {
+                    width:98px;
+                    height:27px;
+                    top:0;
+                    left:0;
+                    margin-left:190px;
+                    margin-top:161px;
+                    position:absolute;
+                    background:url("http://st1.ofmimg.com/images/ch_playing_next_line.png") no-repeat scroll -90px 0 transparent;
+                }
+    #playing-now div.position {
+        width:100%;
+        height:10px;
+        margin:5px 0;
+        background:url("http://st1.ofmimg.com/images/channel_position_now_bg.png") repeat-x scroll 0 0 transparent;
+    }
+    #playing-now li.prev div.position { background-image:url("http://st1.ofmimg.com/images/channel_position_prev_bg.png"); }
+        #playing-now li.now div.position div.control {
+            width:10px;
+            height:10px;
+            background:url("http://st1.ofmimg.com/images/channel_position_control.png") no-repeat scroll 0 0 transparent;
+        }
+    #playing-now div.meta h2.artist { font-size:10pt; }
+        #playing-now div.meta h2 a { color:#000000; }
+    #playing-now div.meta div.title { clear:both; overflow:hidden; width:100%;}
+        #playing-now div.meta h2.song { font-size:14pt; display:block; float:left; }
+        #playing-now div.meta a.fav {
+            display:block;
+            width:20px;
+            height:20px;
+            float:left;
+            margin-left:7px;
+            text-decoration:none;
+            background:url("http://st1.ofmimg.com/images/small_star.png") no-repeat scroll 0 0 transparent;
+        }
+            #playing-now div.meta a.fav:hover { background-position:-20px 0; }
+    #playing-now div.meta p.album { margin-top:15px; }
+        #playing-now div.meta p.album a { color:#000000; }
+            #playing-now li.prev h2 a,
+            #playing-now li.prev p.album a { color:inherit;}
+    #playing-now div.offer { clear:both; position:absolute; top:212px; left:0; }
+        #playing-now div.offer a { font-size:8pt; }
+/* playing now end */
+
+/* playlist begin */
+#playlist {
+    position:relative;
+    overflow:hidden;
+    width:500px;
+    /*margin:40px auto;*/
+    font:10pt Trebuchet MS,Arial,Verdana,Helvetica,sans-serif;
+}
+#playlist * { margin:0; padding:0; }
+    #playlist h3.title { margin-left:0; margin-bottom:15px; font-size:20pt; }
+        #playlist h3.title-playlist { margin-left:121px; }
+    #playlist #playlist { width:585px; text-align:left; }
+        #playlist table { border-spacing:0; }
+        #playlist td { width:16px; line-height:11pt; vertical-align:top; padding:4px 0; }
+        #playlist td.legend { width:115px; text-align:right; padding-right:10px; }
+        #playlist td.name { width:350px; }
+        #playlist td.time { width:21px; text-align:right; }
+            #playlist td div.legend { position:absolute; left:0; margin-left:-47px; width:150px; text-align:right; font-size:8pt; }
+                #playlist tr.now td.legend { color:#cd0000; }
+                #playlist tr.next td.legend { color:#7F7F7F; }
+            #playlist td a { color:#000000; }
+/* playlist end */
+
+/* more button begin */
+.more-block {
+    background:url("http://st1.ofmimg.com/images/tile_blue.png") repeat scroll left top transparent;
+    -webkit-border-radius:9px;
+    -moz-border-radius:9px;
+    -khtml-border-radius:9px;
+    border-radius:9px;
+}
+    .more-block a { display:block; }
+    .more-block a,
+    .more-block a * { color:#ffffff; text-decoration:none; }
+    .more-block span { display:block; text-align:center; }
+    .more-block span.count { font-weight:bold; }
+/* more button end */
+
+
+div.text { margin-left:121px; }
+
+div#copyright {
+    float: right;
+    font-size: 10pt;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+div#copyright a { color: #449DEF; text-decoration: underline;}

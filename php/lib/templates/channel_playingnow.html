@@ -1,0 +1,98 @@
+<div id="playing-now" class="content-block">
+<ul class="songs">
+    <!-- prev song -->
+    <li class="song prev">
+        <div class="position">&nbsp;</div>
+        <div class="song-data">
+            <div class="meta">
+                <div class="legend">{#PREV_PLAYING_LABEL#}</div>
+                <h2 class="artist">{#PREV_ARTIST_TITLE#}</h2>
+                <div class="title">
+                    <h2 class="song">{#PREV_SONG_TITLE#}</h2>
+                </div>
+                <p class="album">
+                    {#PREV_ALBUM_LABEL#}
+                    <span class="title">{#PREV_ALBUM_TITLE#}</span><span class="year">{#PREV_ALBUM_COMMA#}{#PREV_ALBUM_YEAR#}</span>
+                </p>
+            </div>
+        </div>
+    </li>
+    <!-- / prev song -->
+    <!-- current song -->
+    <li class="song now">
+        <div class="position"><div class="control" style="margin-left:0;"></div></div>
+        <div class="song-data">
+            <div class="cover">
+                <img src="{#CURRENT_COVER_SRC#}" alt="{#CURRENT_COVER_ALT#}" />
+            </div>
+            <div class="meta">
+                <div class="legend">{#CURRENT_PLAYING_LABEL#}</div>
+                <h2 class="artist">{#CURRENT_ARTIST_TITLE#}</h2>
+                <div class="title">
+                    <h2 class="song">{#CURRENT_SONG_TITLE#}</h2>
+                </div>
+                <p class="album">
+                    {#CURRENT_ALBUM_LABEL#}<br />
+                    <span class="title">{#CURRENT_ALBUM_TITLE#}</span><span class="year">{#CURRENT_ALBUM_COMMA#}{#CURRENT_ALBUM_YEAR#}</span>
+                </p>
+            </div>
+            <div class="button">
+                <a class="player"
+                   href="{#PLAYER_URL#}"
+                   title="{#PLAYER_TITLE#}"
+                   {#PLAYER_ONCLICK#}
+                   <span class="btn">&nbsp;</span>
+                   <span class="text">{#PLAYER_LISTEN_LABEL#}</span>
+                </a>
+            </div>
+            <div class="offer">
+            </div>
+        </div>
+    </li>
+    <!-- / current song -->
+    <!-- next song -->
+    <li class="song next">
+        <div class="position"></div>
+        <div class="song-data">
+            <div class="cover">
+                <img src="{#NEXT_COVER_SRC#}" alt="{#NEXT_COVER_ALT#}" />
+            </div>
+            <div class="meta">
+                <div class="legend">{#NEXT_PLAYING_LABEL#}</div>
+                <h2 class="artist">{#NEXT_ARTIST_TITLE#}</h2>
+                <div class="title">
+                    <h2 class="song">{#NEXT_SONG_TITLE#}</h2>
+                </div>
+                <p class="album">
+                    {#NEXT_ALBUM_LABEL#}<br />
+                    <span class="title">
+                    {#NEXT_ALBUM_TITLE#}</span><span class="year">{#NEXT_ALBUM_COMMA#}{#NEXT_ALBUM_YEAR#}</span>
+                </p>
+            </div>
+            <div class="line">
+                <div class="before">&nbsp;</div>
+                <div class="after">&nbsp;</div>
+            </div>
+            <div class="offer">
+            </div>
+        </div>
+    </li>
+    <!-- / next song -->
+    <!-- next2 song -->
+    <li class="song next next2">
+        <div class="position"></div>
+        <div class="song-data">
+            <div class="cover">
+            <img src="{#NEXT2_COVER_SRC#}" alt="{#NEXT2_COVER_ALT#}" />
+            </div>
+            <div class="line">
+                <div class="before">&nbsp;</div>
+                <div class="after">&nbsp;</div>
+            </div>
+            <div class="offer">
+            </div>
+        </div>
+    </li>
+    <!-- / next2 song -->
+</ul>
+</div>

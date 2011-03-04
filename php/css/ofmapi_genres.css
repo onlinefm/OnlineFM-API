@@ -1,0 +1,16 @@
+ul#genres {
+    font:12pt Trebuchet MS,Arial,Verdana,Helvetica,sans-serif;
+    overflow:hidden;
+}
+ul#genres li {
+    list-style-type:none;
+    display:block;
+    float:left;
+    padding:5px 10px;
+}
+    ul#genres li a {
+        color:#000000;
+        font-weight:bold;
+        text-decoration:none;
+    }
+    ul#genres li a:hover { text-decoration:underline; }

@@ -1,0 +1,31 @@
+<{#LIST_ITEM_TAG#} {#LIST_ITEM_HTML_ATTRS#} id="channel-item-{#CHANNEL_ID#}">
+    <div class="cover">
+        <a href="{#CHANNEL_URL#}" title="{#COVER_TITLE#}">
+            <img src="{#COVER_SRC#}" alt="{#COVER_ALT#}" /></a>
+    </div>
+    <div class="meta">
+        <div class="data">
+            <h2>
+                <a href="{#CHANNEL_URL#}" title="{#CHANNEL_TITLE#}">
+                    {#CHANNEL_NAME#}</a>
+            </h2>
+            <div class="playing-now">
+                {#CURRENT_PLAYING_LABEL#}<br />
+                <span class="song">{#CURRENT_SONG_TITLE#}</span>&nbsp;{#CURRENT_SONG_MDASH#}
+                <span class="artist">{#CURRENT_ARTIST_TITLE#}</span>
+            </div>
+            <div class="playing-next">
+                {#NEXT_PLAYING_LABEL#}<br />
+                <span class="song">{#NEXT_SONG_TITLE#}</span>&nbsp;{#NEXT_SONG_MDASH#}
+                <span class="artist">{#NEXT_ARTIST_TITLE#}</span>
+            </div>
+        </div>
+    </div>
+    <div class="top">&nbsp;</div>
+    <div class="bottom">
+        <a href="{#PLAYER_URL#}" title="{#PLAYER_TITLE#}" {#PLAYER_ONCLICK#}>
+            <span class="text">{#PLAYER_LISTEN_LABEL#}</span>
+            <span class="button">&nbsp;</span>
+        </a>
+    </div>
+</{#LIST_ITEM_TAG#}>
