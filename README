@@ -1,0 +1,10 @@
+Online.FM internet radio public API
+Current version: 0.3.1
+Updated at: 04.03.2011
+
+Using this API you can integrate our streams and radio channel's metadata into your web projects.
+
+Please read documentation of how to use API and integrate in your projects.
+
+Currently we support PHP versions of API. But you can create your own version using
+different programming languages. You should use RAW data URLs to get our data.
